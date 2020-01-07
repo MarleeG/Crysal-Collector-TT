@@ -1,11 +1,21 @@
 .header{
-    margin: auto;
     background-color: #D2D3CF;
     text-align: center;
     margin: 25px 30px;
+    padding: 10px 10px;
 }
 
 .header h1{
     font-size: 40px;
     padding: 40px;
+}
+
+div.rules{
+    background-color: #F7E7EF;
+    margin: 0px 50px 50px 50px;
+}
+
+div.rules p{
+    padding: 30px;
+    line-height: 1.6;
 }
