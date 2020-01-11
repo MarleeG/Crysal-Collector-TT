@@ -19,3 +19,8 @@ div.rules p{
     padding: 30px;
     line-height: 1.6;
 }
+
+.rules h3{
+    padding-top: 10px;
+    font-weight: bold;
+}
