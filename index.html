@@ -45,11 +45,9 @@
                 </p>
             </div>
 
-            <div class="game-test default-margin">
+            <div class="game default-margin">
                 <div class="row">
-                    <div class="column">
-
-
+                    <div class="column" id="crystal_container">
                         <div class="images">
                             <div class="row">
                                 <img id="denim" src="./assets/images/denim_crystal.png" alt="denim" />
@@ -62,10 +60,26 @@
                     </div>
 
                     <div class="column">
-                        <h2>Column 2</h2>
-                        <p>text...</p>
+                        <div class="row" style="position: relative;">
+                            <!-- Update the number here -->
+                            <div class="column" >
+                                <strong>
+                                    <p id="user_total">
+                                        24
+                                    </p>
+                                </strong>
+                            </div>
+
+                            <div class="column">
+                                <strong>
+                                    <p id="winning_number">
+                                        58
+                                    </p>
+                                </strong>
+                            </div>
+                        </div>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -74,7 +88,7 @@
 
         </div>
     </div>
-    
+
     <!-- game.js -->
     <script src="./assets/javascript/game.js"></script>
 </body>
