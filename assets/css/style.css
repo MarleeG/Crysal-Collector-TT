@@ -42,13 +42,13 @@ div.rules p{
 .column{
     float: left;
     width: 50%;
-    padding: 10px;
+    /* padding: 10px; */
     height: 300px;
 }
 
-.column:first-child{
+/* .column:first-child{
     background-color:#aaa;
-}
+} */
 
 .column:nth-child(2){
     background-color:#bbb;
@@ -73,4 +73,19 @@ img{
    text-align: center;
    position: relative;
    top: 15%;
+}
+
+/* 2nd column */
+#winning_number, #user_total{
+    font-size: 275px;
+    text-align: center;
+    padding: 0 90px;
+    position: absolute;
+    top: 7%;
+}
+
+
+/* temporary border for first column */
+#crystal_container{
+    border-right: 2px solid black;
 }
