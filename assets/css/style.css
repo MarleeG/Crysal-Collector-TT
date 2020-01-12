@@ -1,7 +1,19 @@
+*, *::before, *::after {box-sizing: inherit;}
+html {box-sizing: border-box;}
+
+.container{
+    margin: 10px 30px;
+}
+
+.default-margin{
+    margin: 15px 0px;
+}
+
+
 .header{
     background-color: #D2D3CF;
     text-align: center;
-    margin: 25px 30px;
+    margin: 25px 0px;
     padding: 10px 10px;
 }
 
@@ -12,7 +24,9 @@
 
 div.rules{
     background-color: #F7E7EF;
-    margin: 0px 50px 50px 50px;
+    /* margin: 0px 300px 50px 300px; */
+    /* margin: 0% 2% 50% 2%; */
+    text-align: center;
 }
 
 div.rules p{
@@ -23,4 +37,40 @@ div.rules p{
 .rules h3{
     padding-top: 10px;
     font-weight: bold;
+}
+
+.column{
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.column:first-child{
+    background-color:#aaa;
+}
+
+.column:nth-child(2){
+    background-color:#bbb;
+}
+
+.row:after{
+    content: "";
+    display:table;
+    clear: both;
+}
+
+/* Images */
+img{
+    width: 23%;
+    height:auto;
+    padding: 10px;
+}
+
+.images{
+   /* margin: 30px; */
+   width: 100%;
+   text-align: center;
+   position: relative;
+   top: 15%;
 }
