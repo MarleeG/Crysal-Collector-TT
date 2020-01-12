@@ -27,9 +27,13 @@ $(function () {
         log(crystal_values);
     }
 
+    
+
     // Execute all functions that need to be ran at the begining of 
     // the game here.
     giveCrystalsValue();
+
+    
 
 
 
