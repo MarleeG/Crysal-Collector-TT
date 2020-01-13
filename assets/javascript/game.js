@@ -27,11 +27,14 @@ $(function () {
         log(crystal_values);
     }
 
-    
+    function newWinningNum(){
+        $("#winning_number").text(randomNum(102) + 18);
+    }
 
     // Execute all functions that need to be ran at the begining of 
     // the game here.
     giveCrystalsValue();
+    newWinningNum();
 
     
 
