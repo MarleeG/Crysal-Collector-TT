@@ -85,6 +85,11 @@ img{
 }
 
 
+.number-heading{
+    margin-top: 10px;
+    text-align: center;
+}
+
 /* temporary border for first column */
 #crystal_container{
     border-right: 2px solid black;
