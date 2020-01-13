@@ -46,6 +46,7 @@
             </div>
 
             <div class="game default-margin">
+
                 <div class="row">
                     <div class="column" id="crystal_container">
                         <div class="images">
@@ -61,21 +62,46 @@
 
                     <div class="column">
                         <div class="row">
-                            <!-- Update the number here -->
-                            <div class="column" style="border-right: 2px solid black; position: relative;">
+                            <!-- Total Sv=core -->
+                            <div class="column" style="width: 33%; border-right: 2px solid black; position: relative;">
                                 <h5 class="number-heading">Total Score</h5>
-                                <strong class="displayed_number" style="padding: 0 50px">
+                                <strong class="displayed_number" style="padding: 0 10px">
                                     <p id="user_total"></p>
                                 </strong>
                             </div>
 
-                            <div class="column" style="position: relative;">
+
+                            <!-- Random Number -->
+                            <div class="column" style="position: relative; width: 33%; border-right: 2px solid black;">
                                 <!-- padding: 0 60px -->
                                 <h5 class="number-heading">Random Number</h5>
-                                <strong class="displayed_number" style="padding: 0 60px">
+                                <strong class="displayed_number">
                                     <p id="winning_number">
                                     </p>
                                 </strong>
+                            </div>
+
+
+                            <!-- Scores -->
+                            <div class="column" style="position: relative; width: 33%">
+                                <h5 class="number-heading" style="margin-bottom: 30px;">Scores</h5>
+                                <!-- 
+                                <strong class="displayed_number" style="padding: 0 60px">
+                                    <p id="winning_number">
+                                    </p>
+                                </strong> -->
+                                <div class="scores_container">
+                                    <!-- Status -->
+                                    <div class="row score_layout">Status: </div>
+
+                                    <!-- Wins -->
+                                    <div class="row score_layout">Wins: <p id="wins">6</p></div>
+
+                                    <!-- Losses -->
+                                    <div class="row">Losses: <p id="losses"></p></div>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>

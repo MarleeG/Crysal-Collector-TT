@@ -77,10 +77,10 @@ img{
 
 /* 2nd column */
 .displayed_number{
-    font-size: 250px;
+    font-size: 200px;
     text-align: center;
     position: absolute;
-    top: 7%;
+    top: 20%;
     /* right: 20%; */
 }
 
@@ -89,6 +89,15 @@ img{
     margin-top: 10px;
     text-align: center;
 }
+
+/* Scores */
+.score_layout{
+    width: 103%;
+    border-bottom: 1px solid black;
+    height: 70px;
+    /* margin: 65px 0;  */
+}
+
 
 /* temporary border for first column */
 /* #crystal_container{
