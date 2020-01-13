@@ -79,9 +79,9 @@ img{
 .displayed_number{
     font-size: 250px;
     text-align: center;
-    padding: 0 90px;
     position: absolute;
     top: 7%;
+    /* right: 20%; */
 }
 
 
@@ -91,6 +91,6 @@ img{
 }
 
 /* temporary border for first column */
-#crystal_container{
+/* #crystal_container{
     border-right: 2px solid black;
-}
+} */
