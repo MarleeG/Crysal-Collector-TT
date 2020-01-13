@@ -7,7 +7,7 @@ $(function () {
         {crystal: 'vintage', value: 0}
     ];
 
-    var user_total = 0;
+    var user_total = 20;
 
 
 
