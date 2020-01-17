@@ -1,5 +1,4 @@
 $(function () {
-    const log = console.log;
     var crystal_values = [
         {crystal: 'denim', value: 0},
         {crystal: 'orange', value: 0},
@@ -8,14 +7,13 @@ $(function () {
     ];
 
     var user_total = 0;
-
-
-
+    var wins = 0;
+    var losses = 0;
+    var status = "Game Started!";
 
     $("img").on("click", (event) => {
         var crystal = event.target.id;
 
-        log("Crystal clicked: ", crystal);
         // add the value of the crystal clicked to user total
         // then execute updateUserTotal()
         
@@ -28,6 +26,9 @@ $(function () {
                 updateUserTotal();
             }
         }
+
+        updateScores();
+        
     });
 
 
@@ -43,10 +44,15 @@ $(function () {
             crystal_values[i].value = randomNum(12);
         }
 
-        log(crystal_values);
     }
 
     function newWinningNum(){
+        // restarts the game by making user total variable equal 0
+        user_total = 0;
+        updateUserTotal();
+        // status = 'Game Started!';
+        displayScores();
+
         $("#winning_number").text(randomNum(102) + 18);
     }
 
@@ -54,6 +60,58 @@ $(function () {
     function updateUserTotal(){
         $("#user_total").text(user_total);
     }
+
+
+    // create a function that updates/checks the score
+    function updateScores(){
+        // this will assign the number value of the random/winning number to the winning_num variable
+        var winning_num = parseInt($("#winning_number").text());
+
+
+        if(user_total > winning_num){
+            // increase losses by 1
+            losses++;
+
+            // update scores and game status to the user
+            status = "You lost!"
+            displayScores();
+
+
+            // generate another random number;
+            // user total set back to 0 and update on screen
+
+            newWinningNum();
+
+            // change crystal values
+            giveCrystalsValue();
+            
+            alert(`You have lost the game!`);
+        }else if (user_total === winning_num){
+            // increase wins by 1 
+            wins++;
+
+            // and update game status and scores to the user
+            status = "You won!";
+            displayScores();
+
+           // user total set back to 0 and update on screen
+            newWinningNum();
+
+            // change crystal values
+            giveCrystalsValue();
+            alert("You've won the game");
+        }
+    }
+
+
+    // this will display the updated scores to the user
+    function displayScores(){
+        $("#wins").text(wins);
+        $("#losses").text(losses);
+        $("#status").text(status);
+    }
+
+    
 
     // Execute all functions that need to be ran at the begining of 
     // the game here.
@@ -65,9 +123,10 @@ $(function () {
     newWinningNum();
 
     // displays initial user total
-    updateUserTotal();
+    // updateUserTotal();
 
-    
+    // display scores
+    displayScores();
 
 
 
